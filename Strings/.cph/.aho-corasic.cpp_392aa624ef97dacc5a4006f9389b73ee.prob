@@ -1,0 +1,1 @@
+{"name":"Local: aho-corasic","url":"d:\\mateoo\\Competitive-Programming-Algorithms\\Strings\\aho-corasic.cpp","tests":[{"id":1697300295497,"input":"aaaaa\n5\n3 a\n3 aa\n2 aaa\n3 aaaa\n1 aaaaa\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mateoo\\Competitive-Programming-Algorithms\\Strings\\aho-corasic.cpp","group":"local","local":true}

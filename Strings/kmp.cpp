@@ -10,6 +10,7 @@ vi  prefix_function(string &s) {
     }
     return pf;
 }
+
 // numero de ocurrencias de p en s
 int kmp(string &s, string &p) {
     int n = s.size(), m = p.size(), cnt = 0;
@@ -24,3 +25,4 @@ int kmp(string &s, string &p) {
     }
     return cnt;
 }
+

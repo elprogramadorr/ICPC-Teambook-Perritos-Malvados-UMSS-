@@ -2,7 +2,7 @@ struct vertex {
 	map<char,int> next,go;
 	int p,link;
 	char pch;
-	vector<int> leaf;
+	vector<int> leaf; // se puede cambiar por int, en ese caso int leaf y leaf(0) en constructor
 	vertex(int p=-1, char pch=-1):p(p),pch(pch),link(-1){}
 };
 vector<vertex> t;

@@ -1,7 +1,10 @@
-// f = 1 para pares, 0 impar
-//a a a a a a
-//1 2 3 3 2 1   f = 0 impar
-//0 1 2 3 2 1   f = 1 par
+/*
+f = 1 para pares, 0 impar
+a a a a a a
+1 2 3 3 2 1   f = 0 impar
+0 1 2 3 2 1   f = 1 par centrado entre [i-1,i]
+Time: O(n)
+*/
 void manacher(string &s, int f, vi &d){
     int l=0, r=-1, n=s.size();
     d.assign(n,0);

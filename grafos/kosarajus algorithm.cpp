@@ -1,18 +1,3 @@
-#include<bits/stdc++.h>
-#define lcm(a,b) (a/__gcd(a,b))*b
-#define fast ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define ll long long int
-#define vi vector<int>
-#define vll vector<ll>
-#define pb push_back
-#define F first
-#define S second
-#define mp make_pair
-//"\n"
-//gcd(a,b)= ax + by
-//lCB x&-x
-//__builtin_popcount(x)
-using namespace std;
 const int tam=200005;
 vi G[tam],G1[tam];
 vector<bool>vis;
@@ -31,8 +16,7 @@ void dfs1(int nodo){
         if(!vis[it])dfs1(it);
     }
 }
-int main()
-{
+int main(){
     int n,m,a,b;
     cin>>n>>m;
     for(int i=0;i<m;i++){
@@ -50,8 +34,6 @@ int main()
             scc++;
             dfs1(v[i]);
         }
-    }
-
-    
+    }    
     return 0;
 }

@@ -1,6 +1,9 @@
-// O(V^2 * E)
-// O(E * √V) para unit capacity
+/*
+O(V^2 * E)
+O(E * √V) para unit capacity
 
+Nota.- cuando te pide algo como que la suma no sean primos, se modela como grafo bipartito de (pares,impares)
+*/
 struct edge {int v, cap, inv, flow;};
 
 struct Dinic {

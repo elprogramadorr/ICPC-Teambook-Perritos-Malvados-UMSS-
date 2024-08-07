@@ -92,4 +92,25 @@ struct Dinic {
         }
         return res;
     }
+
+    vi minimum_vertex_cover(vi &left_nodes, vi &right_nodes) {
+        vector<bool> vis(n, false);
+        queue<int> q;
+        q.push(s);
+        vis[s] = true;
+        while (!q.empty()) {
+            int u = q.front(); q.pop();
+            for (auto& e : g[u]) {
+                if (e.cap > 0 && !vis[e.v]) {
+                    vis[e.v] = true;
+                    q.push(e.v);
+                }
+            }
+        }
+ 
+        vi res;
+        for (int u : left_nodes) if (!vis[u]) res.push_back(u); // Left side vertices not reachable
+        for (int u : right_nodes) if (vis[u]) res.push_back(u); // Right side vertices reachable
+        return res;
+    }
 };

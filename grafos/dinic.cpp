@@ -56,4 +56,34 @@ struct Dinic {
         while (bfs()) res += dfs(s, INT_MAX);
         return res;
     }
+
+    vector<pair<int,int> > min_cut() {// solo funciona con aristas no repetidas?
+        vector<bool> vis(n,false);
+        queue<int> q;
+        q.push(s);
+        vis[s] = true;
+        while (!q.empty()) {
+            int u = q.front(); q.pop();
+            for (auto& e : g[u]) {
+                if (e.cap > 0 && !vis[e.v]) {
+                    vis[e.v] = true;
+                    q.push(e.v);
+                }
+            }
+        }
+
+        vector<pair<int,int> > res;
+        for (int u = 0; u < n; u++) {
+            if (vis[u]) {
+                for (auto& e : g[u]) {
+                    if (!vis[e.v]) {
+                        res.push_back({u, e.v});
+                    }
+                }
+            }
+        }
+        sort(res.begin(), res.end());
+        res.resize(unique(res.begin(), res.end()) - res.begin());
+        return res;
+    }
 };

@@ -4,7 +4,10 @@ O(E * √V) para unit capacity
 
 Nota.- cuando te pide algo como que la suma no sean primos, se modela como grafo bipartito de (pares,impares)
 */
-struct edge {int v, cap, inv, flow;};
+
+struct edge {
+    int v, cap, inv, flow;
+};
 
 struct Dinic {
     int n, s, t;
@@ -14,16 +17,17 @@ struct Dinic {
     Dinic(int n) : n(n), lvl(n), g(n) {}
 
     void add_edge(int u, int v, int c) {
-        g[u].push_back({v, c, g[v].size(), 0});
-        g[v].push_back({u, 0, g[u].size() - 1, c});
+        g[u].push_back({v, c, (int)g[v].size(), 0});
+        g[v].push_back({u, 0, (int)g[u].size() - 1, 0});
     }
 
     bool bfs() {
         fill(lvl.begin(), lvl.end(), -1);
         queue<int> q;
         lvl[s] = 0;
-        for (q.push(s); q.size(); q.pop()) {
-            int u = q.front();
+        q.push(s);
+        while (!q.empty()) {
+            int u = q.front(); q.pop();
             for (auto& e : g[u]) {
                 if (e.cap > 0 && lvl[e.v] == -1) {
                     lvl[e.v] = lvl[u] + 1;
@@ -40,25 +44,29 @@ struct Dinic {
         for (auto& e : g[u]) {
             if (e.cap > 0 && lvl[e.v] == lvl[u] + 1) {
                 int tf = dfs(e.v, min(nf, e.cap));
-                res += tf; nf -= tf; e.cap -= tf;
-                g[e.v][e.inv].cap += tf;
-                g[e.v][e.inv].flow -= tf;
-                e.flow += tf;
-                if (nf == 0) return res;
+                if (tf > 0) {
+                    e.cap -= tf;
+                    g[e.v][e.inv].cap += tf;
+                    e.flow += tf;
+                    g[e.v][e.inv].flow -= tf;
+                    res += tf;
+                    nf -= tf;
+                    if (nf == 0) break;
+                }
             }
         }
-        if (!res) lvl[u] = -1;
-        return res;
+        return res > 0 ? res : (lvl[u] = -1, 0);
     }
 
-    int max_flow(int so, int si, int res = 0) {
+    int max_flow(int so, int si) {
         s = so; t = si;
+        int res = 0;
         while (bfs()) res += dfs(s, INT_MAX);
         return res;
     }
 
-    vector<pair<int,int> > min_cut() {// solo funciona con aristas no repetidas?
-        vector<bool> vis(n,false);
+    vector<pair<int, int>> min_cut() {
+        vector<bool> vis(n, false);
         queue<int> q;
         q.push(s);
         vis[s] = true;
@@ -72,18 +80,16 @@ struct Dinic {
             }
         }
 
-        vector<pair<int,int> > res;
+        vector<pair<int, int>> res;
         for (int u = 0; u < n; u++) {
             if (vis[u]) {
                 for (auto& e : g[u]) {
-                    if (!vis[e.v]) {
+                    if (!vis[e.v] && e.flow > 0) {
                         res.push_back({u, e.v});
                     }
                 }
             }
         }
-        sort(res.begin(), res.end());
-        res.resize(unique(res.begin(), res.end()) - res.begin());
         return res;
     }
 };

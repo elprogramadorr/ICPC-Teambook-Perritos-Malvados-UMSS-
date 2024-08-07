@@ -81,3 +81,12 @@ bool check_segment_intersection(Point a1, Point a2, Point b1, Point b2){
 	}
 	return true;
 }
+
+int doble_area(vector<Point> &p){
+    int n=p.size();
+    int res=0;
+    for(int i=0;i<n;i++){
+        res+=cross(p[i],p[(i+1)%n]);
+    }
+    return abs(res);
+}

@@ -6,6 +6,8 @@
 #define rep(i,a,b) for(int i=a;i<b;i++)
 using namespace std;
 
+int st[(1<<20)][20];
+
 struct SuffixArray{
     string s;
     vi sa,lcp,rank;
@@ -30,7 +32,7 @@ struct SuffixArray{
 			for (k && k--, j = sa[rank[i] - 1];
 					s[i + k] == s[j + k]; k++);
     } 
-	int st[(1<<20)][20];// ojo con esto al testear	
+	
 	void initST(){
 		int n = sz(lcp);
 		for(int i=0;i<n;i++)st[i][0] = lcp[i];

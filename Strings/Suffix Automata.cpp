@@ -6,6 +6,8 @@ dp[nodo] = sa[nodo].cnt + dp[hijo_s]
 R = sa[nodo].len = substring mas grande matcheado (camino mas largo)
 L = sa.sa[sa.sa[nodo].link].len+1; es el camino mas corto desde 0 hasta nodo. desde cero hasta nodo hay substrings de sz [L,R] cada camino matchea un substring distinto.
 
+Todos los substrings hasta nodo/estado tienen la misma cantidad de ocurrencias en el string sa[nodo].cnt
+
 Todos los strings correspondientes a un nodo son sufijos distintos del substring len.
 
 El nodo inicial del SA es 0 y te mueves con sa[nodo].nxt[c] solo si sa[nodo].nxt.count(c)

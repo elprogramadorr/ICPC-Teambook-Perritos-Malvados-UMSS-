@@ -76,4 +76,30 @@ struct suffix_automaton {
         last = cur;
     }
     node& operator[](int i) { return sa[i]; }
+
+    // esto no es necesario, es chanchulla
+    // cantidad de apariciones de algun shift ciclico de p en s (automata del string s)
+    int count_cyclic_shifts(string &p) {
+        int m = p.size(), ans = 0, cur = 0, len = 0;
+        if (m > sa.size()) return 0;
+ 
+        vector<bool> vis(sa.size(), false);
+        vector<int> nodes;
+        string s = p + p;
+        for (int i = 0; i < s.size(); ++i) {
+            while (cur != -1 && !sa[cur].next.count(s[i])) 
+                cur = sa[cur].link, len = sa[cur].len;
+            if (cur != -1) 
+                cur = sa[cur].next[s[i]], ++len;
+            while (cur > 0 && m < sa[sa[cur].link].len + 1) 
+                cur = sa[cur].link, len = sa[cur].len;
+            if (i >= m - 1 && cur > 0 && len >= m && !vis[cur]) {
+                ans += sa[cur].cnt;
+                vis[cur] = true;
+                nodes.push_back(cur);
+            }
+        }
+        for (int x : nodes) vis[x] = false;
+        return ans;
+    }
 };

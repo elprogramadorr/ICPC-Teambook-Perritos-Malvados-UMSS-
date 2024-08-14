@@ -1,13 +1,9 @@
-#include <bits/stdc++.h>
-#define lcm(a,b) (a/__gcd(a,b))*b
-#define jumanji ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define pb push_back
-#define F first
-#define S second
-#define vi vector<int>
-#define ll long long
-using namespace std;
-//heavy light decomposition
+// El camino entre dos nodos pasa por maximo log n aristas livianas
+// los ids (en el arreglo) de los nodos de un subarbol son contiguos entonces puedes hacer updates a todo el subarbol [id[nodo],id[nodo]+sz[nodo]-1]
+// en dp que solo importa el estado de atras se puede hacer dp[lvl][estado] para ahorrar memoria y primero me muevo por los livianos
+// y luego por el pesado sin cambiar el lvl pq ya no importa
+
+// heavy light decomposition
 const int tam=200005;
 int v[tam];
 int bigchild[tam],padre[tam],depth[tam];

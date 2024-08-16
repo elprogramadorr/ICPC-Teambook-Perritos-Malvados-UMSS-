@@ -1,4 +1,6 @@
 // pf[i] = longest proper prefix of s[0..i] which is also a suffix of it
+// a b a a b c a
+// 0 0 1 1 2 0 1
 vi  prefix_function(string &s) {
     int n = s.size();
     vi pf(n);

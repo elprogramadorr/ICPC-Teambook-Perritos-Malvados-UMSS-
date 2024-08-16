@@ -1,6 +1,6 @@
 // TIme: O(|s|)
 // Maximum length of a substring that begins at position i and is a prefix of the string.
-// abaabca
+// a b a a b c a
 // 0 0 1 2 0 0 1
 vi z_function(string s){
     int n=s.size();

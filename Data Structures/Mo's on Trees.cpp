@@ -1,3 +1,4 @@
+// Si en el rango un nodo aparece dos veces entonces no se toma en cuenta (se cancela)
 // Para una query en camino [u,v], IN[u]<=IN[v]
 // Si LCA(u,v) = u -> Rango Query [IN[u],IN[v]]
 // Si No -> Rango Query [OUT[u],IN[v]] + [IN[LCA],IN[LCA]] (o sea falta considerar el LCA)

@@ -1,4 +1,3 @@
-using namespace std;
 const int tam=100005;
 ll pref[tam];
 ll res[tam];

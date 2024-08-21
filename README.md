@@ -1,10 +1,9 @@
 # Competitive-Programming-Notebook
-This is a repository for Fast and Fourier - EAFIT ICPC Team Notebook.
+This is a repository for Perritos Malvados - UMSS ICPC Team Notebook.
 
-The folder `code` contains most of the algorithms used by our team in the coding competitions: graph, strings, geometry, data structures, network flows, math, dynamic programming and other competitive programming stuff.
+Contains most of the algorithms used by our team in the coding competitions: graph, strings, geometry, data structures, flows, math, dynamic programming and other competitive programming stuff.
 
 \
-**NOTE:** Look `code/template.cpp` to unterstand macros in the codes.
 
 
 # Generator Notebook Usage

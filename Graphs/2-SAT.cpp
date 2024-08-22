@@ -1,8 +1,9 @@
 /*
 indexado en 0
 Time complexity: O(N)
-
 Se puede usar desde index 0 en los nodos y la inicialización tampoco es estricta e.g. sat2 S(n+5) 
+
+Notas.- En problemas de direccionar aristas e.g. grado salida = grado entrada
 */
 struct sat2 {
     int n;

@@ -1,6 +1,7 @@
 /*
-La entrada es un vector (dest, index global de la arista), para grafos no dirigidos
-las aristas de ida y vuelta tienen el mismo index global. Reorna un vector de nodos en el Eulerian path/cycle
+La entrada es un vector (dest, index global de la arista) en dirigidos 
+para grafos no dirigidos las aristas de ida y vuelta tienen el mismo index global.
+Retorna un vector de nodos en el Eulerian path/cycle
 con src como nodo inicial. Si no hay solucion, retorna un vector vacio.
 
 Para obtener indices de aristas, añadir .second a s y ret o usar mapa.
@@ -19,7 +20,7 @@ Time complexity: O(V + E)
 */
 vi eulerWalk(vector<vector<pii>> &gr, int nedges, int src = 1){
     int n = gr.size();
-    vi D(n), its(n), eu(nedges), ret, s = {src};// cambiar eu a mapa<int,bool> si las aristas no son [0,nedges]
+    vi D(n), its(n), eu(nedges), ret, s = {src};// cambiar eu a mapa<int,bool> si las aristas no son [0,nedges] o volverlo global
     D[src]++; // para permitir Euler Paths, no solo ciclos
     while (!s.empty()){
         int x = s.back(), y, e, &it = its[x], end = gr[x].size();

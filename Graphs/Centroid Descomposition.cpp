@@ -42,7 +42,7 @@ void DC(int nodo){
     // update dfs(nodo)
     for(auto it : G[c]){
         if(del[it])continue;
-        // sigues con calculo, a veces si tienes que contar para cada nodo caminos que pasan sobre él
+        // sigues con calculo, a veces si tienes que contar para cada nodo caminos que pasan sobre el
         // y no solamente cantidad de caminos puedes hacer
         // delete dfs(it)
         // contar (it)

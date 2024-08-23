@@ -71,7 +71,7 @@ bool check(Tree A, int a, Tree B, int b){
   int hashB[A.n+5];//hash del subarbol rooteado en i
 
   vector<vi>EA,EB;//le paso los hash de todos los hijos de i me 
-                  //servirá para formar el hash del subarbol i  
+                  //servira para formar el hash del subarbol i  
   EA.resize(A.n+1);EB.resize(A.n+1);
   
   for(int h=A.level.size()-1;h>=0;h--){

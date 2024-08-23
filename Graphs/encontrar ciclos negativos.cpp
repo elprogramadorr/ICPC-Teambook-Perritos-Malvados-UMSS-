@@ -1,23 +1,3 @@
-#include<bits/stdc++.h>
-#define lcm(a,b) (a/__gcd(a,b))*b
-#define fast ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define ll long long int
-#define vi vector<int>
-#define vll vector<ll>
-#define pb push_back
-#define F first
-#define S second
-#define mp make_pair
-//salida rapida "\n"
-//DECIMALES fixed<<sp(n)<<x<<endl;
-//gcd(a,b)= ax + by
-//lCB x&-x
-//set.erase(it) - ersases the element present at the required index//auto it = s.find(element)
-//set.find(element) - iterator pointing to the given element if it is present else return pointer pointing to set.end()
-//set.lower_bound(element) - iterator pointing to element greater than or equal to the given element
-//set.upper_bound(element) - iterator pointing to element greater than the given element
-// | ^
-//__builtin_popcount(x)
 using namespace std;
 const ll INF=1e16;
 int main()
@@ -49,7 +29,7 @@ int main()
     for(int i=0;i<n;i++){
         in=p[in];
     }
-    //este for para econtrar un cilo pq tal vez estoy en la rama 
+    //este for para econtrar un ciclo pq tal vez estoy en la rama 
     if(ok){
         cout<<"NO"<<endl;
     }else{
@@ -70,4 +50,3 @@ int main()
     
     return 0;
 }
-// la vida es dura pero mas dura mi verdura

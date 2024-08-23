@@ -1,6 +1,6 @@
 /*
 O(V^2 * E)
-O(E * √V) para unit capacity
+O(E * sqrt(V)) para unit capacity
 
 Nota.- cuando te pide algo como que la suma no sean primos, se modela como grafo bipartito de (pares,impares)
 */

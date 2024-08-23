@@ -1,15 +1,4 @@
-#include<bits/stdc++.h>
-#define lcm(a,b) (a/__gcd(a,b))*b
-#define fast ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define ll long long int
-#define vi vector<int>
-#define vll vector<ll>
-#define pb push_back
-#define F first
-#define S second
-#define mp make_pair
-using namespace std;
-//hallar puntos de articulacion
+
 vector<vi>G;
 vi vis,arc;
 vector<bool>check;
@@ -58,15 +47,3 @@ int main()
 	
 	return 0;
 }
-/*
-8 9
-1 2
-2 3
-3 4
-4 5
-3 5
-2 6
-6 7
-1 7
-1 8
-*/

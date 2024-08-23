@@ -15,11 +15,20 @@ strings/suffix automata.cpp	Suffix Autómata
 strings/z algorithm.cpp	   Z Algorithm
 
 [Graph algorithms]
-Graphs/Khun.cpp	   Khun
 Graphs/Centroid Descomposition.cpp	   Centroid Descomposition
 Graphs/dinic.cpp	   Dinitz
 Graphs/Euler Walk.cpp	   Euler Walk
-
+Graphs/HLD.cpp	   HLD
+Graphs/LCA binary lifting.cpp	   LCA Binary Lifting
+Graphs/LCA sparse table.cpp	   LCA Sparse Table
+Graphs/puentes.cpp	   Puentes
+Graphs/Khun.cpp	   Khun
+Graphs/isomorfismo arboles.cpp	   Isomorfismo Arboles
+Graphs/small to large.cpp	   Small to Large
+Graphs/kosarajus.cpp	   Kosaraju
+Graphs/Dynamic-Connectivity.cpp	   Dynamic Connectivity
+Graphs/bellman ford.cpp	   Bellman Ford
+Graphs/Squeeze graphs with simple cycles.cpp	   Squeeze graphs with simple cycles
 
 [Data Structures]
 Data Structures/2D BIT.cpp	   2D BIT
@@ -36,6 +45,8 @@ Math/Linear Diophantine.cpp		Linear Diophantine
 Math/Linear Sieve.cpp		Linear Sieve
 Math/moebius function.cpp		Moebius
 Math/Pascal.cpp		Pascal
+Math/Coeficiente Binomial.cpp		Coeficiente Binomial
+Math/Euler phi.cpp		Euler Phi
 
 [Geometry]
 Geometry/closest pair of points.cpp		Closest Pair of Points
@@ -55,6 +66,6 @@ Other/puntos con el mismo slope.cpp		Puntos con el mismo slope
 Other/Simulated Annealing.cpp		Simulated Annealing
 Other/SOS DP.cpp		SOS DP
 Other/Submascaras.cpp		Submascaras
-Other/LIS.cpp	LIS
+Other/Ternary Search.cpp		Ternary Search
 
 [Fin]

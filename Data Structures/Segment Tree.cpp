@@ -1,9 +1,4 @@
-#include <bits/stdc++.h>
-#include <iostream>
-#include <vector>
-#define vi vector<int>
-#define pb push_back
-using namespace std;
+
 // suma en rango
 vi v;
 struct ST{

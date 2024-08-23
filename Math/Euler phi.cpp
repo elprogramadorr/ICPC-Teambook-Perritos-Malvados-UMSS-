@@ -7,7 +7,6 @@ Time complexity: < O(N (log N))
 
 const int tam=1e5+5;
 int phi[tam];
-
 void init(){
     for(int i=1;i<tam;i++){
         phi[i]=i;

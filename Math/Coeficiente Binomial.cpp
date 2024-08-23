@@ -18,6 +18,7 @@ ll Pou(int a, int n){
    }
 }
 ll nck(int n, int k){
+   if(n<r)return 0;  
    ll res=(fact[n]*Pou((fact[k]*fact[n-k])%MOD,MOD-2))%MOD;
    return res;
 }

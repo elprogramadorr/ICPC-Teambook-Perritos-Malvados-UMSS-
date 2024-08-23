@@ -6,7 +6,7 @@ bool cmp(Point a, Point b){
         return cross(a, b) > 0;
 }
 
-// this starts from the half line 𝑥≤0, 𝑦=0 
+// this starts from the half line x<=0, y=0 
 int group(Point a){
     if(a.y<0)return -1;
     if(a.y==0 && a.x>=0)return 0;

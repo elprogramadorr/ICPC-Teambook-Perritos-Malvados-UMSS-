@@ -12,7 +12,6 @@ M[{dx,dy}].pb(meto);
 
 
 
-
 int dx=X-x;
 int dy=Y-y;
 int g=__gcd(abs(dx),abs(dy));

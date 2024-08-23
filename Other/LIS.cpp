@@ -18,7 +18,7 @@ vi LIS2(vi v) {
     vi curr(n);
     for (int i = 0; i < n; i++) {
         int izq = 0, der = dp.size() - 1;
-        int pos = dp.size(); // Posición por defecto es al final
+        int pos = dp.size(); // Posicion por defecto es al final
         while (izq <= der) {
             int mid = (izq + der)/2;
             if (dp[mid] >= v[i]) { // LNDS if(dp[mid]<=v[i])

@@ -89,7 +89,7 @@ int main() {
 		if(c=='?'){
 			responder[i]=true;
 			continue;
-		}
+		} 
 		cin>>a>>b;
 		if(a>b)swap(a,b);
 		if(c=='+'){

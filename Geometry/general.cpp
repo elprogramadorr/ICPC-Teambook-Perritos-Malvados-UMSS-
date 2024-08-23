@@ -33,11 +33,10 @@ vector<Point> convex_hull(vector<Point> p){
     if(ch.size() == 2 && ch[0] == ch[1]) ch.pop_back();
     return ch;
 }
-// si usas para hallar la parte baja del ch añadir (minx,maxy+1) y (maxx,maxy+1)
+// si usas para hallar la parte baja del ch anhadir (minx,maxy+1) y (maxx,maxy+1)
 
 // angulo entre vector a y b
 double angle(Point a, Point b){
-    // θ = cos-1( (a · b) / (|a| * |b|) )
     double aV = sqrt(dot(a,a));
     double bV = sqrt(dot(b,b));
     double resRad = acos(dot(a,b)/(aV*bV)); // radianes
@@ -49,7 +48,6 @@ double calcular_H(Point a, Point b, Point P){
     //(a,b) * H = area paralelogramo
     double area=abs(cross(P-a,b-a));
     double disAB=sqrt(dist2(a,b));
-    // cout<<"area  "<<area<<endl;
     double H=area/disAB;
     return H;
 }

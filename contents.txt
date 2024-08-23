@@ -5,24 +5,56 @@
 
 
 [Strings]
-strings/aho corasic.cpp	Aho-Corasick
-strings/kmp.cpp	KMP
+strings/aho corasick.cpp	Aho-Corasick
+strings/hashing.cpp		Hashing
+strings/kmp.cpp	KMP		KMP
+strings/kmp automata.cpp	KMP Automata
+strings/manacher.cpp	Manacher
+strings/suffix array.cpp	Suffix Array
+strings/suffix automata.cpp	Suffix Autómata
+strings/z algorithm.cpp	   Z Algorithm
 
 [Graph algorithms]
-
-
-[Flows]
+Graphs/Khun.cpp	   Khun
+Graphs/Centroid Descomposition.cpp	   Centroid Descomposition
+Graphs/dinic.cpp	   Dinitz
+Graphs/Euler Walk.cpp	   Euler Walk
 
 
 [Data Structures]
-
+Data Structures/2D BIT.cpp	   2D BIT
+Data Structures/DSU Rollback.cpp	   DSU Rollback
+Data Structures/Implicit Segment Tree.cpp	   Implicit Segment Tree	   
+Data Structures/Mo's.cpp	   Mos
+Data Structures/Mo's on Trees.cpp	   Mos on Trees
+Data Structures/Segment Tree.cpp	   Segment Tree
+Data Structures/Sparse Table.cpp	   Sparse Table
 
 [Math]
-
-
-[Dynamic Programming]
+Math/Factorizacion.cpp		Factorizacion Criba
+Math/Linear Diophantine.cpp		Linear Diophantine
+Math/Linear Sieve.cpp		Linear Sieve
+Math/moebius function.cpp		Moebius
+Math/Pascal.cpp		Pascal
 
 [Geometry]
+Geometry/closest pair of points.cpp		Closest Pair of Points
+Geometry/general.cpp		General
+Geometry/polygon.cpp		Polygon
+Geometry/sort c-clockwise.cpp		Sort Counter Clockwise
 
+[Other]
+Other/DP_DC.cpp		DP DC
+Other/DP_DC_amortizado.cpp		DP DC Amortizado
+Other/index compression.cpp		Index Compression
+Other/knapsack optimization.cpp		Knapsack Optimization
+Other/kth Permutation.cpp		Kth Permutation
+Other/LIS.cpp		LIS
+Other/pragmas.cpp		Pragmas
+Other/puntos con el mismo slope.cpp		Puntos con el mismo slope
+Other/Simulated Annealing.cpp		Simulated Annealing
+Other/SOS DP.cpp		SOS DP
+Other/Submascaras.cpp		Submascaras
+Other/LIS.cpp	LIS
 
 [Fin]

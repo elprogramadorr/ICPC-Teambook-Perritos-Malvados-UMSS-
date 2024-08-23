@@ -1,5 +1,5 @@
 /*
-Retorna indices (index 0) de los puntos más cercanos.
+Retorna indices (index 0) de los puntos mas cercanos.
 Time: O (n log n)
 */
 long long dist2(pair<int, int> a, pair<int, int> b) {

@@ -15,6 +15,7 @@ strings/suffix automata.cpp	Suffix Autómata
 strings/z algorithm.cpp	   Z Algorithm
 
 [Graph algorithms]
+Graphs/2-SAT.cpp	   2-SAT
 Graphs/Centroid Descomposition.cpp	   Centroid Descomposition
 Graphs/dinic.cpp	   Dinitz
 Graphs/Euler Walk.cpp	   Euler Walk

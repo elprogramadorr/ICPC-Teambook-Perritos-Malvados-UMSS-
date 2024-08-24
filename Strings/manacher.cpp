@@ -5,13 +5,13 @@ a a a a a a
 0 1 2 3 2 1   f = 1 par centrado entre [i-1,i]
 Time: O(n)
 */
-void manacher(string &s, int f, vi &d){
-    int l=0, r=-1, n=s.size();
-    d.assign(n,0);
-    for(int i=0; i<n; i++){
-        int k=(i>r? (1-f) : min(d[l+r-i+ f], r-i+f)) + f;
-        while(i+k-f<n && i-k>=0 && s[i+k-f]==s[i-k]) ++k;
-        d[i] = k - f; --k;
-        if(i+k-f > r) l=i-k, r=i+k-f;
-    }
+void manacher(string &s, int f, vi &d) {
+  int l = 0, r = -1, n = s.size();
+  d.assign(n, 0);
+  for (int i = 0; i < n; i++) {
+    int k = (i > r ? (1 - f) : min(d[l + r - i + f], r - i + f)) + f;
+    while (i + k - f < n && i - k >= 0 && s[i + k - f] == s[i - k]) ++k;
+    d[i] = k - f; --k;
+    if (i + k - f > r) l = i - k, r = i + k - f;
+  }
 }

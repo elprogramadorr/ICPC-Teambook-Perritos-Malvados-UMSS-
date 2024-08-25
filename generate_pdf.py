@@ -33,7 +33,7 @@ def get_style(filename):
         return 'java'
     elif ext in ['py']:
         return 'py'
-    else:
+    else:   
         return 'txt'
 
 def texify(s):

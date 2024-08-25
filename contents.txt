@@ -48,6 +48,10 @@ Math/moebius function.cpp		Moebius
 Math/Pascal.cpp		Pascal
 Math/Coeficiente Binomial.cpp		Coeficiente Binomial
 Math/Euler phi.cpp		Euler Phi
+Math/Discrete Log.cpp		Discrete Logarithm
+Math/Miller Rabin.cpp		Miller Rabin
+Math/Segmented Sieve.cpp		Segmented Sieve
+
 
 [Geometry]
 Geometry/closest pair of points.cpp		Closest Pair of Points

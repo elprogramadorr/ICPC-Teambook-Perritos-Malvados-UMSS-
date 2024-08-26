@@ -6,6 +6,7 @@
         "__locale": "cpp",
         "locale": "cpp",
         "vector": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "iostream": "cpp"
     }
 }

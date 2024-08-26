@@ -558,6 +558,8 @@ Enumerating subsets of a bitmask $m$: \\
 \verb$__builtin_ctz/__builtin_clz$ returns the number of trailing/leading zero bits. \\
 \verb$__builtin_popcount(unsigned x)$ counts 1-bits (slower than table lookups). \\
 For 64-bit unsigned integer type, use the suffix `\verb$ll$', i.e. \verb$__builtin_popcountll$.
+\verb$a + b = 2 * (a \& b) + (a \oplus b)$
+
 \Topic{XOR}
 Let's say F(L,R) is XOR of subarray from L to R.\\
 Here we use the property that F(L,R)=F(1,R) XOR F(1,L-1)

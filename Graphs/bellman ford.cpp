@@ -1,5 +1,5 @@
 // Time: O(n*m)
-// Distancia más corta desde source a todos los nodos
+// Distancia mas corta desde source a todos los nodos
 const int INF=1e18;
 const int tam=2505;
 vi G[tam];

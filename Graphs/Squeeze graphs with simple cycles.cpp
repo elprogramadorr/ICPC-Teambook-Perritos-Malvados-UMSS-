@@ -1,3 +1,4 @@
+// solo funciona para undirected
 void dfs(int nodo, int ant){
   id[nodo]=nodo;
   for(auto it : G[nodo]){

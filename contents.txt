@@ -7,7 +7,7 @@
 [Strings]
 strings/aho corasick.cpp	Aho-Corasick
 strings/hashing.cpp		Hashing
-strings/kmp.cpp	KMP		KMP
+strings/kmp.cpp		KMP
 strings/kmp automata.cpp	KMP Automata
 strings/manacher.cpp	Manacher
 strings/suffix array.cpp	Suffix Array

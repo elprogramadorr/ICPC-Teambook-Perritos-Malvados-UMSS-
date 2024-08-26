@@ -1,17 +1,31 @@
-const ll INF=1e16;
-vector<vll>G;
-vector<bool>vis;
-void dfs(ll u){
-    vis[u]=true;
-    for(auto it : G[u]){
-        if(!vis[it]){
-            dfs(it);
-        }
+// Time: O(n*m)
+// Distancia más corta desde source a todos los nodos
+const int INF=1e18;
+const int tam=2505;
+vi G[tam];
+vector<pair<pair<int,int>,int >> E; // (a->b, w)
+int n,m;
+bool cicloNegativo[tam];
+void bellmanFord(int source){
+  vi dist(n+1,INF);
+  dist[source]=0;
+  for(int i=0;i<n-1;i++){
+    for(auto e:E){
+      int a=e.first.first;
+      int b=e.first.second;
+      int w=e.second;
+      if(dist[a]!=INF && dist[b]>dist[a]+w){
+        dist[b]=dist[a]+w;
+      }
     }
+  }
+  for(auto e:E){
+    int a=e.first.first;
+    int b=e.first.second;
+    int w=e.second;
+    if(dist[a]!=INF && dist[b]>dist[a]+w){
+      cicloNegativo[b]=true;// b esta en un ciclo negativo
+      // marca al menos un nodo de cada ciclo negativo
+    }
+  }
 }
-int main()
-{
-    
-    return 0;
-}
-// la vida es dura pero mas dura mi verdura

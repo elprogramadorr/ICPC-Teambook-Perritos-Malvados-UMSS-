@@ -4,11 +4,11 @@ O(E * sqrt(V)) para unit capacity
 
 Nota.- cuando te pide algo como que la suma no sean primos, se modela como grafo bipartito de (pares,impares)
 
-Maximiza la ganancia seleccionando máquinas, que tienen un costo, para completar proyectos que requieren ciertas máquinas y generan ganancias. 
-Las máquinas pueden compartirse entre diferentes proyectos. 
+Maximiza la ganancia seleccionando maquinas, que tienen un costo, para completar proyectos que requieren ciertas maquinas y generan ganancias. 
+Las maquinas pueden compartirse entre diferentes proyectos. 
 Sol.- Si no se corta la arista entre S y un proyecto, el proyecto se completa y genera ganancia. 
-Si se corta la arista entre una máquina y T, entonces se compra la máquina. 
-Entonces si no se corta la arista entre S y un proyecto, significa que se compran todas las máquinas requeridas para ese proyecto.
+Si se corta la arista entre una maquina y T, entonces se compra la maquina. 
+Entonces si no se corta la arista entre S y un proyecto, significa que se compran todas las maquinas requeridas para ese proyecto.
 
 res=sumaProyectos-minCut
 */
@@ -94,7 +94,7 @@ struct Dinic {
         for (auto& e : g[u]) {
           if (!vis[e.v] && e.flow > 0) {
             // res.push_back({u, e.v}); corto entre (u, e.v)
-            // puedes añadir un indice al struct edge para saber el indice de arista e.ind
+            // puedes anhadir un indice al struct edge para saber el indice de arista e.ind
           }
         }
       }

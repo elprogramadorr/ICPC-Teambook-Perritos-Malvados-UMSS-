@@ -85,7 +85,8 @@ struct Dinic {
       if (vis[u]) {
         for (auto& e : g[u]) {
           if (!vis[e.v] && e.flow > 0) {
-            res.push_back({u, e.v});
+            // res.push_back({u, e.v}); corto entre (u, e.v)
+            // puedes añadir un indice al struct edge para saber el indice de arista e.ind
           }
         }
       }

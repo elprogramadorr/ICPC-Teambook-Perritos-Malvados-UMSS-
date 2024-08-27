@@ -9,6 +9,8 @@ Las máquinas pueden compartirse entre diferentes proyectos.
 Sol.- Si no se corta la arista entre S y un proyecto, el proyecto se completa y genera ganancia. 
 Si se corta la arista entre una máquina y T, entonces se compra la máquina. 
 Entonces si no se corta la arista entre S y un proyecto, significa que se compran todas las máquinas requeridas para ese proyecto.
+
+res=sumaProyectos-minCut
 */
 
 struct edge {

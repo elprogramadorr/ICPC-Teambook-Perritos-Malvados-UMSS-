@@ -1,13 +1,3 @@
-#include<bits/stdc++.h>
-#define lcm(a,b) (a/__gcd(a,b))*b
-#define fast ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define ll long long
-#define vi vector<int>
-#define pb push_back
-#define F first
-#define S second
-#define int long long
-using namespace std;
 vi v;
 const int tam=1000005;
 int E[tam];
@@ -111,6 +101,5 @@ signed main()
       }
 
    }
-   
    return 0;
 }

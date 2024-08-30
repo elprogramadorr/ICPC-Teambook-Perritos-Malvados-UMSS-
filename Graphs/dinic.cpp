@@ -1,5 +1,5 @@
 /*
-O(V^2 * E)
+O(V^2 * E) en la practica corre mas rapido
 O(E * sqrt(V)) para unit capacity
 
 Nota.- cuando te pide algo como que la suma no sean primos, se modela como grafo bipartito de (pares,impares)

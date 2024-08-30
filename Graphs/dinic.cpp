@@ -101,7 +101,7 @@ struct Dinic {
     }
     return res;
   }
-
+  // minimun vertex cover (nodos que toquen todas aristas) = matchign maximo
   vi minimum_vertex_cover(vi &left_nodes, vi &right_nodes) {
     vector<bool> vis(n, false);
     queue<int> q;

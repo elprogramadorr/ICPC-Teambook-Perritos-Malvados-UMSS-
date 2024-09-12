@@ -1,12 +1,3 @@
-#include <bits/stdc++.h>
-#define int long long
-#define pb push_back
-#define F first
-#define S second
-#define vi vector<int>
-#define ll long double
-#define FIFO ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
-using namespace std;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 struct Point{

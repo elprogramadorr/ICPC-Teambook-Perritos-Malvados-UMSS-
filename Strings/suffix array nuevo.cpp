@@ -39,7 +39,7 @@ struct suffix_array { // s MUST not have 0 value
 //      4. ba
 //      1. babba
 //      3. bba
-// sa   = 5 0 2 4 1 3
+// sa   = 6 5 0 2 4 1 3
 // lcp  = 0 1 2 0 2 1 0
 // rank = 2 5 3 6 4 1 0   posicion del sufixx i en el sa
-// lcp[i] = lcp(sa[i],sa[i-1])
+// lcp[i] = lcp(sa[i],sa[i+1])

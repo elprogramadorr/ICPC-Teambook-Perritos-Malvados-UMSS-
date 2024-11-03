@@ -1,3 +1,7 @@
+// Notas.- Cuando formo el suffix tree inverso
+// cuando quiero ver cuantas veces aparece un nodo en un string s, entonces hago caminar en el aho corasick y en cada paso chequedar suffix links si llegan
+// a veces se puede armar el suffix tree y luego con euler tour y st puedo ver cuantas veces se toco este nodo
+
 struct vertex {
   map<char,int> next,go;
   int p,link;

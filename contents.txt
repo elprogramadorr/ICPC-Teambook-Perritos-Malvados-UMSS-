@@ -11,6 +11,7 @@ strings/kmp.cpp		KMP
 strings/kmp automata.cpp	KMP Automata
 strings/manacher.cpp	Manacher
 strings/suffix array.cpp	Suffix Array
+strings/suffix array nuevo.cpp	Suffix Array Colombia
 strings/suffix automata.cpp	Suffix Autómata
 strings/z algorithm.cpp	   Z Algorithm
 
@@ -30,11 +31,19 @@ Graphs/kosarajus.cpp	   Kosaraju
 Graphs/Dynamic-Connectivity.cpp	   Dynamic Connectivity
 Graphs/bellman ford.cpp	   Bellman Ford
 Graphs/Squeeze graphs with simple cycles.cpp	   Squeeze graphs with simple cycles
+Graphs/MinCost MaxFlow.cpp	   Min Cost Max Flow
+Graphs/lazy propagation.cpp	   Lazy Propagation
+Graphs/encontrar ciclos negativos.cpp	   Encontrar ciclos negativos
+Graphs/Floyd Warshall.cpp	   Floyd Warshall
+Graphs/puntos de articulacion.cpp	   Puntos de Articulacion
+
 
 [Data Structures]
 Data Structures/2D BIT.cpp	   2D BIT
 Data Structures/DSU Rollback.cpp	   DSU Rollback
-Data Structures/Implicit Segment Tree.cpp	   Implicit Segment Tree	   
+Data Structures/Implicit Segment Tree.cpp	   Implicit Segment Tree	
+Data Structures/parallel Binary Search.cpp	   Parallel Binary Search
+Data Structures/Persistent Segment Tree.cpp	   Persistent Segment Tree 
 Data Structures/Mo's.cpp	   Mos
 Data Structures/Mo's on Trees.cpp	   Mos on Trees
 Data Structures/Segment Tree.cpp	   Segment Tree
@@ -61,6 +70,7 @@ Geometry/sort c-clockwise.cpp		Sort Counter Clockwise
 
 [Other]
 Other/DP_DC.cpp		DP DC
+Other/count 1s.cpp		Count 1s
 Other/DP_DC_amortizado.cpp		DP DC Amortizado
 Other/index compression.cpp		Index Compression
 Other/knapsack optimization.cpp		Knapsack Optimization
@@ -72,5 +82,6 @@ Other/Simulated Annealing.cpp		Simulated Annealing
 Other/SOS DP.cpp		SOS DP
 Other/Submascaras.cpp		Submascaras
 Other/Ternary Search.cpp		Ternary Search
+Other/Lift.cpp		BIT Binary Lifting
 
 [Fin]

@@ -3,7 +3,7 @@ import os
 
 def get_sections():
     sections = []
-    section_name = None
+    section_name = None 
     with open('contents.txt', 'r') as f:
         for line in f:
             if '#' in line: line = line[:line.find('#')]
@@ -53,7 +53,7 @@ def get_tex(sections):
 if __name__ == "__main__":
     sections = get_sections()
     tex = get_tex(sections)
-    with open('contents.tex', 'w') as f:
+    with open('contents.teßß', 'w') as f:
         f.write(tex)
     latexmk_options = ["latexmk","-pdf", "notebook.tex"]
     subprocess.call(latexmk_options)

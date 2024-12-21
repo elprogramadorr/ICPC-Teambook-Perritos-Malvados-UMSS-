@@ -14,7 +14,7 @@
 \subsection{Manacher}
 \raggedbottom\lstinputlisting[style=cpp]{strings/manacher.cpp}
 \hrulefill
-\subsection{Suffix Array}
+\subsection{Suffix Arrray}
 \raggedbottom\lstinputlisting[style=cpp]{strings/suffix array.cpp}
 \hrulefill
 \subsection{Suffix Array Colombia}

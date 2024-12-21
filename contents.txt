@@ -32,7 +32,6 @@ Graphs/Dynamic-Connectivity.cpp	   Dynamic Connectivity
 Graphs/bellman ford.cpp	   Bellman Ford
 Graphs/Squeeze graphs with simple cycles.cpp	   Squeeze graphs with simple cycles
 Graphs/MinCost MaxFlow.cpp	   Min Cost Max Flow
-Graphs/lazy propagation.cpp	   Lazy Propagation
 Graphs/encontrar ciclos negativos.cpp	   Encontrar ciclos negativos
 Graphs/Floyd Warshall.cpp	   Floyd Warshall
 Graphs/puntos de articulacion.cpp	   Puntos de Articulacion
@@ -48,6 +47,7 @@ Data Structures/Mo's.cpp	   Mos
 Data Structures/Mo's on Trees.cpp	   Mos on Trees
 Data Structures/Segment Tree.cpp	   Segment Tree
 Data Structures/Sparse Table.cpp	   Sparse Table
+Data Structures/Lazy Propagation.cpp	   Lazy Propagation
 
 [Math]
 Math/Factorizacion.cpp		Factorizacion Criba
@@ -59,6 +59,7 @@ Math/Coeficiente Binomial.cpp		Coeficiente Binomial
 Math/Euler phi.cpp		Euler Phi
 Math/Discrete Log.cpp		Discrete Logarithm
 Math/Miller Rabin.cpp		Miller Rabin
+Math/pollard_rho.cpp		Pollard Rho
 Math/Segmented Sieve.cpp		Segmented Sieve
 
 

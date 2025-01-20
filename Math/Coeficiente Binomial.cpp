@@ -23,7 +23,7 @@ ll nck(int n, int k){
    return res;
 }
 
-// lineal cuando n es muy grande y k pequeño
+// lineal cuando n es muy grande y k pequenho
 
 ll nckLineal(int n, int k){
     if(n<k)return 0;

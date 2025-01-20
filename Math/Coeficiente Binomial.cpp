@@ -22,3 +22,15 @@ ll nck(int n, int k){
    ll res=(fact[n]*Pou((fact[k]*fact[n-k])%MOD,MOD-2))%MOD;
    return res;
 }
+
+// lineal
+
+ll nckLineal(int n, int k){
+    if(n<k)return 0;
+    ll res=1;
+    for(int i=0;i<k;i++){
+        res=(res*(n-i))%MOD;
+        res=(res*Pou(i+1,MOD-2))%MOD;
+    }
+    return res;
+}

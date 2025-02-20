@@ -115,4 +115,5 @@ int main()
 }
 
 //parallel binary search 
+// Complexity : O (Q+N) log N * Log Q (log M es por las queries y update de BIT, N tamanio array, Q numero updates donde aplico D&C)
 //https://oj.uz/problem/view/POI11_met

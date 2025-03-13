@@ -41,5 +41,5 @@ struct RB_DSU_Parity {
     }
 
     bool is_bipartite() { return !conflict; } // Grafo general
-    bool is_bipartite(int a) { return bipart[find(a).first]; } // Conjunto conexo específico
+    bool is_bipartite(int a) { return bipart[find(a).first]; } // Conjunto conexo especifico
 };

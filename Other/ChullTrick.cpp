@@ -34,4 +34,15 @@ struct CHT : public multiset<line> {
 		return l.m*x+l.b;
 	}
 };
+
 // for minimum, you must change (b, m) to (-b, -m)
+
+vector<ld> get_intersections(CHT &cht) {
+    vector<ld> res;
+    for(auto it = cht.begin(); it != cht.end(); it++) {
+        if(next(it) == cht.end()) break;
+        if(it->m == next(it)->m) continue;
+        res.pb((ld)(next(it)->b - it->b) / (it->m - next(it)->m));
+    }
+    return res;
+}

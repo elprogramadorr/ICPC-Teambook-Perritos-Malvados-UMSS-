@@ -1,4 +1,4 @@
-// una representacion minima (no redundante) de los números en términos de combinaciones XOR
+// una representacion minima (no redundante) de los numeros en terminos de combinaciones XOR
 // se pueden formar 2 ^ (bias.size()) numeros distintos con el xor de algun subconjunto
 
 vi get_bias(vi v){

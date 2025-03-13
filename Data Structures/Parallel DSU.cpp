@@ -7,7 +7,7 @@
 
 struct DSU {
     vi P;
-    void init(int N) {
+    void init(int N) {  
         P.resize(N+2);
         for(int i=0;i<=N+1;i++)P[i]=i;
     }

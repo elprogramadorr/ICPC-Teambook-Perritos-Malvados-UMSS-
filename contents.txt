@@ -48,6 +48,8 @@ Data Structures/Mo's on Trees.cpp	   Mos on Trees
 Data Structures/Segment Tree.cpp	   Segment Tree
 Data Structures/Sparse Table.cpp	   Sparse Table
 Data Structures/Lazy Propagation.cpp	   Lazy Propagation
+Data Structures/DSU rollback Bipartite.cpp	   DSU Rollback Bipartite
+Data Structures/Parallel DSU.cpp	   Parallel DSU
 
 [Math]
 Math/Factorizacion.cpp		Factorizacion Criba
@@ -61,6 +63,7 @@ Math/Discrete Log.cpp		Discrete Logarithm
 Math/Miller Rabin.cpp		Miller Rabin
 Math/pollard_rho.cpp		Pollard Rho
 Math/Segmented Sieve.cpp		Segmented Sieve
+Math/XOR bias.cpp		XOR Bias
 
 
 [Geometry]
@@ -68,6 +71,7 @@ Geometry/closest pair of points.cpp		Closest Pair of Points
 Geometry/general.cpp		General
 Geometry/polygon.cpp		Polygon
 Geometry/sort c-clockwise.cpp		Sort Counter Clockwise
+Geometry/Otros.cpp		Otros
 
 [Other]
 Other/DP_DC.cpp		DP DC
@@ -79,10 +83,12 @@ Other/kth Permutation.cpp		Kth Permutation
 Other/LIS.cpp		LIS
 Other/pragmas.cpp		Pragmas
 Other/puntos con el mismo slope.cpp		Puntos con el mismo slope
-Other/Simulated Annealing.cpp		Simulated Annealing
 Other/SOS DP.cpp		SOS DP
 Other/Submascaras.cpp		Submascaras
 Other/Ternary Search.cpp		Ternary Search
 Other/Lift.cpp		BIT Binary Lifting
+Other/ChullTrick.cpp		Chull Trick
+Other/Simulated Annealing.cpp		Simulated Annealing
+Other/Simulated Annealing OBI.cpp		Simulated Annealing OBI
 
 [Fin]
